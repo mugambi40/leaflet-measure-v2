@@ -55,7 +55,7 @@
   <h2><code>measurefinish</code> event data:</h2>
   <pre id="eventoutput">...</pre>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"  crossorigin=""></script>
-  <script src="../dist/leaflet-measure.js"></script>
+  <script src="../dist/leaflet-measure.js?v=3.1.4"></script>
   <script>
     (function(L, document) {
       var map = L.map('map', {
@@ -76,7 +76,7 @@
       var measureControl = new L.Control.Measure({
       position: "topright",
       lineColor: "blue",
-      primaryLengthUnit:  "meters",
+      primaryLengthUnit:  "nm",
       primaryAreaUnit: "sqmeters"     
     });
 

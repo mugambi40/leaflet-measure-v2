@@ -28,7 +28,7 @@ const linePopupTemplateCompiled = template(linePopupTemplate, templateSettings);
 const areaPopupTemplateCompiled = template(areaPopupTemplate, templateSettings);
 
 L.Control.Measure = L.Control.extend({
-  _className: 'leaflet-control-measure hideMapCtrls',
+  _className: 'leaflet-control-measure',
   options: {
     units: {},
     position: 'topright',
@@ -65,7 +65,7 @@ L.Control.Measure = L.Control.extend({
   },
   _initLayout: function() {
     const className = this._className,
-      container = (this._container = L.DomUtil.create('div', `${className} leaflet-bar`));
+      container = (this._container = L.DomUtil.create('div', `${className} leaflet-bar hideMapCtrls`));
 
     container.innerHTML = controlTemplateCompiled({
       model: {
