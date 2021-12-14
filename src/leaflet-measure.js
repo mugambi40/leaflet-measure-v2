@@ -28,7 +28,7 @@ const linePopupTemplateCompiled = template(linePopupTemplate, templateSettings);
 const areaPopupTemplateCompiled = template(areaPopupTemplate, templateSettings);
 
 L.Control.Measure = L.Control.extend({
-  _className: 'leaflet-control-measure',
+  _className: 'leaflet-control-measure hideMapCtrls',
   options: {
     units: {},
     position: 'topright',
@@ -41,7 +41,7 @@ L.Control.Measure = L.Control.extend({
     captureZIndex: 10000, // z-index of the marker used to capture measure events
     popupOptions: {
       // standard leaflet popup options http://leafletjs.com/reference-1.3.0.html#popup-option
-      className: 'leaflet-measure-resultpopup',
+      className: 'leaflet-measure-resultpopup ',
       autoPanPadding: [10, 10]
     }
   },
