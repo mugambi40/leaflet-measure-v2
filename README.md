@@ -42,7 +42,7 @@ var myMap = L.map('mapElementId', {
 });
 ```
 
-<hr>
+<hr> 
 
 
 ## Control options
